@@ -1,4 +1,4 @@
-# keycloak-plugin
+# kibana-keycloak-plugin
 
 > protect your kibana
 

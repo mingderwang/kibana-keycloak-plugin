@@ -13,7 +13,7 @@ uiRoutes
   template,
   resolve: {
     currentTime($http) {
-      return $http.get('../api/keycloak-plugin/example').then(function (resp) {
+      return $http.get('/login').then(function (resp) {
         return resp.data.time;
       });
     }
@@ -21,7 +21,7 @@ uiRoutes
 });
 
 uiModules
-.get('app/keycloak-plugin', [])
+.get('app/kibana-keycloak-plugin', [])
 .controller('keycloakPluginHelloWorld', function ($scope, $route, $interval) {
   $scope.title = 'Keycloak Plugin';
   $scope.description = 'protect your kibana';
